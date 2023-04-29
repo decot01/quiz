@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(to bottom right, rgb(116, 116, 255), rgb(254, 225, 230)) no-repeat;
+    height: 1000px;
+    font-family: 'Gluten', cursive;
+  }
+  
+  .title {
+    padding: 5px;
+    background-color: #3520a0;
+    border-radius: 20px;
+    font-family: 'Gluten', cursive;
+  }
+  
+  input[type=submit] {
+    padding:10px 30px; 
+    background:rgb(224, 185, 183); 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    font-family: 'Gluten', cursive;
+    font-size: 15px;
+    font-weight: 900;
+  }
+  
+  select {
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Gluten', cursive;
+    background-color: #3520a0;
+    font-weight: 900;
+  }
+  
+  .test-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

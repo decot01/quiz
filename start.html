@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_quiz.css') }}">
+    <title>Викторина</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h2 align="center">Выберите викторину:</h2>
+    </div>
+    <form method="post" action="/" align="center">
+        <select name="quiz">
+            {% for id, name in q_list %}
+                <option value="{{id}}">{{name}}</option>
+            {% endfor %}    
+        </select>
+        <br>
+        <br>
+        <p><input type="submit" value="Выбрать" align="center"> </p>
+    </form>
+    <p align="center">разница между режимами<br> теста нужа и выбирайте категорию честно!<br><b>если вы выбрали категрию неправильно то я не несу ответственности за вашу учетную запись хотя я и так и так не несу отвественности) </p>
+
+    <input type="checkbox">
+    <p>понятно!</p>
+</body>
+</html>

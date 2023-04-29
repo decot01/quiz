@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_quiz.css') }}">
+</head>
+<body>
+<h1>Ваш результат:</h1>
+<div class="outer-div"><h3>{{ right }} правильных ответов из {{ total }} test by DECOT  в следуюющий раз лучше неподходи к таким тестам) </h3></div>
+<a href="{{url_for('index')}}" class="button"> вернись назад и откисай) </a>
+</body>
